@@ -22,11 +22,11 @@ spec:
         image: docker.io/nephio/oai-ran-controller:latest
         resources:
           limits:
-            cpu: 5000m
-            memory: 1280Mi
-          requests:
             cpu: 100m
-            memory: 640Mi
+            memory: 32Mi
+          requests:
+            cpu: 5m
+            memory: 16Mi
         securityContext:
           allowPrivilegeEscalation: false
           capabilities:
